@@ -1,0 +1,616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D131F95189F9E6C00DC70F6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D131F94189F9E6C00DC70F6 /* Cocoa.framework */; };
+		4D131FD4189FAC5000DC70F6 /* DXDemoAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D131FC8189FAC5000DC70F6 /* DXDemoAppDelegate.mm */; };
+		4D131FD5189FAC5000DC70F6 /* DXDemoOpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D131FCA189FAC5000DC70F6 /* DXDemoOpenGLView.mm */; };
+		4D131FD6189FAC5000DC70F6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4D131FCC189FAC5000DC70F6 /* Credits.rtf */; };
+		4D131FD7189FAC5000DC70F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D131FCE189FAC5000DC70F6 /* InfoPlist.strings */; };
+		4D131FD8189FAC5000DC70F6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D131FD0189FAC5000DC70F6 /* MainMenu.xib */; };
+		4D131FD9189FAC5000DC70F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D131FD2189FAC5000DC70F6 /* main.m */; };
+		4D131FDA189FAEAD00DC70F6 /* DisplayXFBInterface.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4D131F80189F9D3100DC70F6 /* DisplayXFBInterface.cc */; };
+		4D131FE1189FAEBC00DC70F6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D131FE0189FAEBC00DC70F6 /* OpenGL.framework */; };
+		4D131FE3189FAEF000DC70F6 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D131FE2189FAEF000DC70F6 /* CoreServices.framework */; };
+		4D131FE5189FAF2300DC70F6 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D131FE4189FAF2300DC70F6 /* IOKit.framework */; };
+		4D131FE9189FB15C00DC70F6 /* com_tsoniq_dxdemo_installer.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4D131FE8189FB15C00DC70F6 /* com_tsoniq_dxdemo_installer.sh */; };
+		4D131FF7189FB6BB00DC70F6 /* ts_privilegedscriptrunner.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4D131FF5189FB6BB00DC70F6 /* ts_privilegedscriptrunner.cc */; };
+		4D131FF9189FB6F500DC70F6 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D131FF8189FB6F500DC70F6 /* ServiceManagement.framework */; };
+		4D131FFB189FB6FA00DC70F6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D131FFA189FB6FA00DC70F6 /* Security.framework */; };
+		4D131FFE189FB83700DC70F6 /* DXDemoInstaller.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D131FFD189FB83700DC70F6 /* DXDemoInstaller.mm */; };
+		4D5B56A0189BB9C200F6F471 /* DisplayXFBDriver.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B5692189BB9C200F6F471 /* DisplayXFBDriver.cc */; };
+		4D5B56A2189BB9C200F6F471 /* DisplayXFBFramebuffer.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B5694189BB9C200F6F471 /* DisplayXFBFramebuffer.cc */; };
+		4D5B56A4189BB9C200F6F471 /* DisplayXFBPowerState.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B5696189BB9C200F6F471 /* DisplayXFBPowerState.cc */; };
+		4D5B56A6189BB9C200F6F471 /* DisplayXFBTiming.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B5698189BB9C200F6F471 /* DisplayXFBTiming.cc */; };
+		4D5B56A8189BB9C200F6F471 /* DisplayXFBUserClient.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B569A189BB9C200F6F471 /* DisplayXFBUserClient.cc */; };
+		4D8A7BAF18A03A70001BD474 /* DisplayXFBAccelerator.cc in Sources */ = {isa = PBXBuildFile; fileRef = 4D8A7BAD18A03A70001BD474 /* DisplayXFBAccelerator.cc */; };
+		4D9EF46218A2F01600C13BBF /* appicon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 4D9EF46118A2F01600C13BBF /* appicon.iconset */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D131FF0189FB2F100DC70F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D37935E189BB833009071BB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D379367189BB833009071BB;
+			remoteInfo = com_tsoniq_DisplayXFB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D131F80189F9D3100DC70F6 /* DisplayXFBInterface.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DisplayXFBInterface.cc; sourceTree = "<group>"; };
+		4D131F81189F9D3100DC70F6 /* DisplayXFBInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayXFBInterface.h; sourceTree = "<group>"; };
+		4D131F93189F9E6C00DC70F6 /* DXDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DXDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D131F94189F9E6C00DC70F6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4D131F96189F9E6C00DC70F6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		4D131F97189F9E6C00DC70F6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4D131F98189F9E6C00DC70F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4D131FC5189FAC5000DC70F6 /* DXDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DXDemo-Info.plist"; sourceTree = "<group>"; };
+		4D131FC6189FAC5000DC70F6 /* DXDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DXDemo-Prefix.pch"; sourceTree = "<group>"; };
+		4D131FC7189FAC5000DC70F6 /* DXDemoAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXDemoAppDelegate.h; sourceTree = "<group>"; };
+		4D131FC8189FAC5000DC70F6 /* DXDemoAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DXDemoAppDelegate.mm; sourceTree = "<group>"; };
+		4D131FC9189FAC5000DC70F6 /* DXDemoOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXDemoOpenGLView.h; sourceTree = "<group>"; };
+		4D131FCA189FAC5000DC70F6 /* DXDemoOpenGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DXDemoOpenGLView.mm; sourceTree = "<group>"; };
+		4D131FCD189FAC5000DC70F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = Credits.rtf; sourceTree = "<group>"; };
+		4D131FCF189FAC5000DC70F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		4D131FD1189FAC5000DC70F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainMenu.xib; sourceTree = "<group>"; };
+		4D131FD2189FAC5000DC70F6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D131FE0189FAEBC00DC70F6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		4D131FE2189FAEF000DC70F6 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		4D131FE4189FAF2300DC70F6 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		4D131FE8189FB15C00DC70F6 /* com_tsoniq_dxdemo_installer.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = com_tsoniq_dxdemo_installer.sh; sourceTree = "<group>"; };
+		4D131FF5189FB6BB00DC70F6 /* ts_privilegedscriptrunner.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ts_privilegedscriptrunner.cc; sourceTree = "<group>"; };
+		4D131FF6189FB6BB00DC70F6 /* ts_privilegedscriptrunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ts_privilegedscriptrunner.h; sourceTree = "<group>"; };
+		4D131FF8189FB6F500DC70F6 /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		4D131FFA189FB6FA00DC70F6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4D131FFC189FB83700DC70F6 /* DXDemoInstaller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DXDemoInstaller.h; sourceTree = "<group>"; };
+		4D131FFD189FB83700DC70F6 /* DXDemoInstaller.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DXDemoInstaller.mm; sourceTree = "<group>"; };
+		4D379368189BB833009071BB /* com_tsoniq_DisplayXFB.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com_tsoniq_DisplayXFB.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D37936C189BB833009071BB /* Kernel.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kernel.framework; path = System/Library/Frameworks/Kernel.framework; sourceTree = SDKROOT; };
+		4D5B568E189BB9C200F6F471 /* DisplayXFB-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "DisplayXFB-Info.plist"; sourceTree = "<group>"; };
+		4D5B568F189BB9C200F6F471 /* DisplayXFB-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DisplayXFB-Prefix.pch"; sourceTree = "<group>"; };
+		4D5B5692189BB9C200F6F471 /* DisplayXFBDriver.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisplayXFBDriver.cc; sourceTree = "<group>"; };
+		4D5B5693189BB9C200F6F471 /* DisplayXFBDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayXFBDriver.h; sourceTree = "<group>"; };
+		4D5B5694189BB9C200F6F471 /* DisplayXFBFramebuffer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisplayXFBFramebuffer.cc; sourceTree = "<group>"; };
+		4D5B5695189BB9C200F6F471 /* DisplayXFBFramebuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayXFBFramebuffer.h; sourceTree = "<group>"; };
+		4D5B5696189BB9C200F6F471 /* DisplayXFBPowerState.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisplayXFBPowerState.cc; sourceTree = "<group>"; };
+		4D5B5697189BB9C200F6F471 /* DisplayXFBPowerState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayXFBPowerState.h; sourceTree = "<group>"; };
+		4D5B5698189BB9C200F6F471 /* DisplayXFBTiming.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisplayXFBTiming.cc; sourceTree = "<group>"; };
+		4D5B5699189BB9C200F6F471 /* DisplayXFBTiming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayXFBTiming.h; sourceTree = "<group>"; };
+		4D5B569A189BB9C200F6F471 /* DisplayXFBUserClient.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisplayXFBUserClient.cc; sourceTree = "<group>"; };
+		4D5B569B189BB9C200F6F471 /* DisplayXFBUserClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayXFBUserClient.h; sourceTree = "<group>"; };
+		4D8A7BAD18A03A70001BD474 /* DisplayXFBAccelerator.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DisplayXFBAccelerator.cc; sourceTree = "<group>"; };
+		4D8A7BAE18A03A70001BD474 /* DisplayXFBAccelerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayXFBAccelerator.h; sourceTree = "<group>"; };
+		4D8A7BC518A0455B001BD474 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		4D9EF46118A2F01600C13BBF /* appicon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = appicon.iconset; sourceTree = "<group>"; };
+		4DA016B318ED59720053389A /* DisplayX.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DisplayX.xcconfig; sourceTree = "<group>"; };
+		4DAAFC6A18C4784A007BA848 /* DisplayXFBNames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayXFBNames.h; sourceTree = "<group>"; };
+		4DAAFC6D18C47BF4007BA848 /* DisplayXFBShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayXFBShared.h; sourceTree = "<group>"; };
+		4DFA98D718C5D74F00908CA0 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		4DFA98DA18C5D7A400908CA0 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		4DFA98DC18C5D7CB00908CA0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D131F90189F9E6C00DC70F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D131FFB189FB6FA00DC70F6 /* Security.framework in Frameworks */,
+				4D131FF9189FB6F500DC70F6 /* ServiceManagement.framework in Frameworks */,
+				4D131FE5189FAF2300DC70F6 /* IOKit.framework in Frameworks */,
+				4D131FE3189FAEF000DC70F6 /* CoreServices.framework in Frameworks */,
+				4D131FE1189FAEBC00DC70F6 /* OpenGL.framework in Frameworks */,
+				4D131F95189F9E6C00DC70F6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D379363189BB833009071BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D131FCB189FAC5000DC70F6 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				4D131FCC189FAC5000DC70F6 /* Credits.rtf */,
+				4D131FCE189FAC5000DC70F6 /* InfoPlist.strings */,
+				4D131FD0189FAC5000DC70F6 /* MainMenu.xib */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		4D37935D189BB833009071BB = {
+			isa = PBXGroup;
+			children = (
+				4D9EF46118A2F01600C13BBF /* appicon.iconset */,
+				4D5B568A189BB87C00F6F471 /* source */,
+				4D37936A189BB833009071BB /* Frameworks */,
+				4D379369189BB833009071BB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4D379369189BB833009071BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D379368189BB833009071BB /* com_tsoniq_DisplayXFB.kext */,
+				4D131F93189F9E6C00DC70F6 /* DXDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D37936A189BB833009071BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DFA98DC18C5D7CB00908CA0 /* CoreGraphics.framework */,
+				4DFA98DA18C5D7A400908CA0 /* IOKit.framework */,
+				4DFA98D718C5D74F00908CA0 /* CoreFoundation.framework */,
+				4D8A7BC518A0455B001BD474 /* CoreFoundation.framework */,
+				4D131FFA189FB6FA00DC70F6 /* Security.framework */,
+				4D131FF8189FB6F500DC70F6 /* ServiceManagement.framework */,
+				4D131FE4189FAF2300DC70F6 /* IOKit.framework */,
+				4D131FE2189FAEF000DC70F6 /* CoreServices.framework */,
+				4D131FE0189FAEBC00DC70F6 /* OpenGL.framework */,
+				4D131F94189F9E6C00DC70F6 /* Cocoa.framework */,
+				4D37936B189BB833009071BB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D37936B189BB833009071BB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D37936C189BB833009071BB /* Kernel.framework */,
+				4D131F96189F9E6C00DC70F6 /* AppKit.framework */,
+				4D131F97189F9E6C00DC70F6 /* CoreData.framework */,
+				4D131F98189F9E6C00DC70F6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		4D5B568A189BB87C00F6F471 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				4DA016B218ED59380053389A /* xcconfig */,
+				4D5B568D189BB96500F6F471 /* displayxdemo */,
+				4D5B568C189BB95300F6F471 /* displayxlib */,
+				4D5B568B189BB88F00F6F471 /* displayxfb */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		4D5B568B189BB88F00F6F471 /* displayxfb */ = {
+			isa = PBXGroup;
+			children = (
+				4D5B568E189BB9C200F6F471 /* DisplayXFB-Info.plist */,
+				4D5B568F189BB9C200F6F471 /* DisplayXFB-Prefix.pch */,
+				4DAAFC6A18C4784A007BA848 /* DisplayXFBNames.h */,
+				4DAAFC6D18C47BF4007BA848 /* DisplayXFBShared.h */,
+				4D5B5692189BB9C200F6F471 /* DisplayXFBDriver.cc */,
+				4D5B5693189BB9C200F6F471 /* DisplayXFBDriver.h */,
+				4D5B5694189BB9C200F6F471 /* DisplayXFBFramebuffer.cc */,
+				4D5B5695189BB9C200F6F471 /* DisplayXFBFramebuffer.h */,
+				4D8A7BAD18A03A70001BD474 /* DisplayXFBAccelerator.cc */,
+				4D8A7BAE18A03A70001BD474 /* DisplayXFBAccelerator.h */,
+				4D5B5696189BB9C200F6F471 /* DisplayXFBPowerState.cc */,
+				4D5B5697189BB9C200F6F471 /* DisplayXFBPowerState.h */,
+				4D5B5698189BB9C200F6F471 /* DisplayXFBTiming.cc */,
+				4D5B5699189BB9C200F6F471 /* DisplayXFBTiming.h */,
+				4D5B569A189BB9C200F6F471 /* DisplayXFBUserClient.cc */,
+				4D5B569B189BB9C200F6F471 /* DisplayXFBUserClient.h */,
+			);
+			path = displayxfb;
+			sourceTree = "<group>";
+		};
+		4D5B568C189BB95300F6F471 /* displayxlib */ = {
+			isa = PBXGroup;
+			children = (
+				4D131F80189F9D3100DC70F6 /* DisplayXFBInterface.cc */,
+				4D131F81189F9D3100DC70F6 /* DisplayXFBInterface.h */,
+			);
+			path = displayxlib;
+			sourceTree = "<group>";
+		};
+		4D5B568D189BB96500F6F471 /* displayxdemo */ = {
+			isa = PBXGroup;
+			children = (
+				4D131FC5189FAC5000DC70F6 /* DXDemo-Info.plist */,
+				4D131FC6189FAC5000DC70F6 /* DXDemo-Prefix.pch */,
+				4D131FC7189FAC5000DC70F6 /* DXDemoAppDelegate.h */,
+				4D131FC8189FAC5000DC70F6 /* DXDemoAppDelegate.mm */,
+				4D131FC9189FAC5000DC70F6 /* DXDemoOpenGLView.h */,
+				4D131FCA189FAC5000DC70F6 /* DXDemoOpenGLView.mm */,
+				4D131FFC189FB83700DC70F6 /* DXDemoInstaller.h */,
+				4D131FFD189FB83700DC70F6 /* DXDemoInstaller.mm */,
+				4D131FF5189FB6BB00DC70F6 /* ts_privilegedscriptrunner.cc */,
+				4D131FF6189FB6BB00DC70F6 /* ts_privilegedscriptrunner.h */,
+				4D131FE8189FB15C00DC70F6 /* com_tsoniq_dxdemo_installer.sh */,
+				4D131FCB189FAC5000DC70F6 /* en.lproj */,
+				4D131FD2189FAC5000DC70F6 /* main.m */,
+			);
+			path = displayxdemo;
+			sourceTree = "<group>";
+		};
+		4DA016B218ED59380053389A /* xcconfig */ = {
+			isa = PBXGroup;
+			children = (
+				4DA016B318ED59720053389A /* DisplayX.xcconfig */,
+			);
+			path = xcconfig;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D131F92189F9E6C00DC70F6 /* DXDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D131FBF189F9E6C00DC70F6 /* Build configuration list for PBXNativeTarget "DXDemo" */;
+			buildPhases = (
+				4D131F8F189F9E6C00DC70F6 /* Sources */,
+				4D131F90189F9E6C00DC70F6 /* Frameworks */,
+				4D131F91189F9E6C00DC70F6 /* Resources */,
+				4D131FEF189FB26000DC70F6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D131FF1189FB2F100DC70F6 /* PBXTargetDependency */,
+			);
+			name = DXDemo;
+			productName = DisplayXDemo;
+			productReference = 4D131F93189F9E6C00DC70F6 /* DXDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D379367189BB833009071BB /* com_tsoniq_DisplayXFB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D379378189BB833009071BB /* Build configuration list for PBXNativeTarget "com_tsoniq_DisplayXFB" */;
+			buildPhases = (
+				4D379362189BB833009071BB /* Sources */,
+				4D379363189BB833009071BB /* Frameworks */,
+				4D379365189BB833009071BB /* Resources */,
+				4D379366189BB833009071BB /* Rez */,
+				4DA016B418ED62D50053389A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com_tsoniq_DisplayXFB;
+			productName = DisplayX;
+			productReference = 4D379368189BB833009071BB /* com_tsoniq_DisplayXFB.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D37935E189BB833009071BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = tSoniq;
+			};
+			buildConfigurationList = 4D379361189BB833009071BB /* Build configuration list for PBXProject "DisplayX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D37935D189BB833009071BB;
+			productRefGroup = 4D379369189BB833009071BB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D131F92189F9E6C00DC70F6 /* DXDemo */,
+				4D379367189BB833009071BB /* com_tsoniq_DisplayXFB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D131F91189F9E6C00DC70F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D131FE9189FB15C00DC70F6 /* com_tsoniq_dxdemo_installer.sh in Resources */,
+				4D131FD7189FAC5000DC70F6 /* InfoPlist.strings in Resources */,
+				4D9EF46218A2F01600C13BBF /* appicon.iconset in Resources */,
+				4D131FD6189FAC5000DC70F6 /* Credits.rtf in Resources */,
+				4D131FD8189FAC5000DC70F6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D379365189BB833009071BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		4D379366189BB833009071BB /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D131FEF189FB26000DC70F6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo \"Copying kernel extension to the app resources folder\"\ncp -Rp \"${BUILT_PRODUCTS_DIR}/k106\" \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\ncp -Rp \"${BUILT_PRODUCTS_DIR}/k109\" \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"";
+		};
+		4DA016B418ED62D50053389A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Create k106 and k109 build variants. These differ only in signing and version labling.\n\nKEXT_NAME=\"${WRAPPER_NAME}\"\nKEXT_SOURCE=\"${BUILT_PRODUCTS_DIR}/${KEXT_NAME}\"\n\nKEXT_DIR_K106=\"${BUILT_PRODUCTS_DIR}/k106\"\nKEXT_DIR_K109=\"${BUILT_PRODUCTS_DIR}/k109\"\nKEXT_TARGET_K106=\"${KEXT_DIR_K106}/${KEXT_NAME}\"\nKEXT_TARGET_K109=\"${KEXT_DIR_K109}/${KEXT_NAME}\"\n\necho \"Constructing k106 and k109 resources\"\necho \"  KEXT_SOURCE         ${KEXT_SOURCE}\"\necho \"  KEXT_TARGET_K106    ${KEXT_TARGET_K106}\"\necho \"  KEXT_TARGET_K109    ${KEXT_TARGET_K109}\"\n\necho \"Cleaning out old kext resources\"\nrm -rf \"${KEXT_DIR_K106}\"\nrm -rf \"${KEXT_DIR_K109}\"\nmkdir -p \"${KEXT_DIR_K106}\"\nmkdir -p \"${KEXT_DIR_K109}\"\n\necho \"Creating k106 kext\"\ncp -Rp \"${KEXT_SOURCE}\" \"${KEXT_TARGET_K106}\"\nVERSION=\"${DISPLAYXFB_VERSION}.0\"\nPLIST=\"${KEXT_TARGET_K106}/Contents/Info.plist\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${VERSION}\" \"${PLIST}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${VERSION}\" \"${PLIST}\"\n\necho \"Creating k109 kext\"\ncp -Rp \"${KEXT_SOURCE}\" \"${KEXT_TARGET_K109}\"\nVERSION=\"${DISPLAYXFB_VERSION}.1\"\nPLIST=\"${KEXT_TARGET_K109}/Contents/Info.plist\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion ${VERSION}\" \"${PLIST}\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${VERSION}\" \"${PLIST}\"\nif [ -z \"${DISPLAYXFB_CODESIGN_KEXT}\" ] ; then\n    echo \"Warning: k109 kext not signed - the driver may not load on future versions of OSX\"\nelse\n    /usr/bin/codesign --force --sign \"${DISPLAYXFB_CODESIGN_KEXT}\" \"${KEXT_TARGET_K109}\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D131F8F189F9E6C00DC70F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D131FD5189FAC5000DC70F6 /* DXDemoOpenGLView.mm in Sources */,
+				4D131FDA189FAEAD00DC70F6 /* DisplayXFBInterface.cc in Sources */,
+				4D131FF7189FB6BB00DC70F6 /* ts_privilegedscriptrunner.cc in Sources */,
+				4D131FD9189FAC5000DC70F6 /* main.m in Sources */,
+				4D131FFE189FB83700DC70F6 /* DXDemoInstaller.mm in Sources */,
+				4D131FD4189FAC5000DC70F6 /* DXDemoAppDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D379362189BB833009071BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D8A7BAF18A03A70001BD474 /* DisplayXFBAccelerator.cc in Sources */,
+				4D5B56A2189BB9C200F6F471 /* DisplayXFBFramebuffer.cc in Sources */,
+				4D5B56A0189BB9C200F6F471 /* DisplayXFBDriver.cc in Sources */,
+				4D5B56A8189BB9C200F6F471 /* DisplayXFBUserClient.cc in Sources */,
+				4D5B56A4189BB9C200F6F471 /* DisplayXFBPowerState.cc in Sources */,
+				4D5B56A6189BB9C200F6F471 /* DisplayXFBTiming.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D131FF1189FB2F100DC70F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D379367189BB833009071BB /* com_tsoniq_DisplayXFB */;
+			targetProxy = 4D131FF0189FB2F100DC70F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D131FCC189FAC5000DC70F6 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D131FCD189FAC5000DC70F6 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		4D131FCE189FAC5000DC70F6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D131FCF189FAC5000DC70F6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4D131FD0189FAC5000DC70F6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D131FD1189FAC5000DC70F6 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D131FC0189F9E6C00DC70F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "source/displayxdemo/DXDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "source/displayxdemo/DXDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4D131FC1189F9E6C00DC70F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "source/displayxdemo/DXDemo-Prefix.pch";
+				INFOPLIST_FILE = "source/displayxdemo/DXDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4D379376189BB833009071BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA016B318ED59720053389A /* DisplayX.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-Wno-deprecated-register";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4D379377189BB833009071BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA016B318ED59720053389A /* DisplayX.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = "-Wno-deprecated-register";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4D379379189BB833009071BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "source/displayxfb/DisplayXFB-Prefix.pch";
+				INFOPLIST_FILE = "source/displayxfb/DisplayXFB-Info.plist";
+				MODULE_NAME = com.tsoniq.DisplayXFB;
+				MODULE_START = 0;
+				MODULE_STOP = 0;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		4D37937A189BB833009071BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "source/displayxfb/DisplayXFB-Prefix.pch";
+				INFOPLIST_FILE = "source/displayxfb/DisplayXFB-Info.plist";
+				MODULE_NAME = com.tsoniq.DisplayXFB;
+				MODULE_START = 0;
+				MODULE_STOP = 0;
+				MODULE_VERSION = 1.0.0d1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D131FBF189F9E6C00DC70F6 /* Build configuration list for PBXNativeTarget "DXDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D131FC0189F9E6C00DC70F6 /* Debug */,
+				4D131FC1189F9E6C00DC70F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D379361189BB833009071BB /* Build configuration list for PBXProject "DisplayX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D379376189BB833009071BB /* Debug */,
+				4D379377189BB833009071BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D379378189BB833009071BB /* Build configuration list for PBXNativeTarget "com_tsoniq_DisplayXFB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D379379189BB833009071BB /* Debug */,
+				4D37937A189BB833009071BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D37935E189BB833009071BB /* Project object */;
+}

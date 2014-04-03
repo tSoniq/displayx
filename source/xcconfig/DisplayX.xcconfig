@@ -1,0 +1,33 @@
+//
+//  DisplayX.xcconfig
+//
+
+
+//  Code-signing identities for the kernel extenion.
+//
+//  Leave blank to disable signing.  Be aware that conventional Apple application signing certificates can
+//  not be used to sign the kext. For more information see the 2013 WWDC presentations.
+//
+//  Note that kext codesigning is performed in the kext post-build script as part of the process
+//  of generating two versions (one suitable for 10.6 or later, the other for 10.9 or later).
+DISPLAYXFB_CODESIGN_KEXT=0ce5fa2ff1f7e47a85df62f2ab16f943a213b85d
+
+
+//  Version information for the kexts.
+//
+//  The kext should be identified by a version of form "x.y". The build script will then generate two
+//  copies of each kext with versions "x.y.0" and "x.y.1" corresponding to the unsigned (10.8 or earlier)
+//  and signed (10.9 or later) copies.
+//
+//  Note that kext versioning is performed in the kext post-build script as part of the process
+//  of generating two versions (one suitable for 10.6 or later, the other for 10.9 or later).
+DISPLAYXFB_VERSION = 1.1
+
+
+//  The number of displays and VRAM size allocated by the kext.
+//
+//  The driver can not dynamically allocate display buffer memory (well, not safely anyway). Each display
+//  is allocated its own VRAM memory pool at boot, so these values must be reasonable even for systems
+//  with limited memory.
+DISPLAYXFB_DISPLAYCOUNT = 1
+DISPLAYXFB_VRAMSIZE = 134217728

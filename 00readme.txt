@@ -2,18 +2,6 @@ DisplayX Virtual Display Software
 =================================
 
 
-Licence
--------
-
-DisplayX may be used freely for research and academic work.
-
-However, the DisplayX software remains the Copyright of tSoniq. DisplayX may not be used in a commercial
-application without prior approval. For more information contact support@tsoniq.com.
-
-
-
-
-
 Description
 -----------
 
@@ -39,6 +27,17 @@ doxygen markup for a description of the available methods. Driver configuration 
 in DisplayXFBShared.h.
 
 For more information contact support@tsoniq.com or visit http://tsoniq.com.
+
+
+
+
+Licence
+-------
+
+DisplayX may be used freely for research and academic work.
+
+However, the DisplayX software remains the Copyright of tSoniq. DisplayX may not be used in a commercial
+application without prior approval. For more information contact support@tsoniq.com.
 
 
 
