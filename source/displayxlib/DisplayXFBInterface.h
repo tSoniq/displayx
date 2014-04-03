@@ -26,19 +26,12 @@ namespace ts
     public:
 
         /** Enumeration for notification callbacks.
-         *
-         *      Notification    Associated Data         Source
-         *      ------------    ---------------         ------
-         *      state           DisplayXFBState         framebuffer notification (IOKit)
-         *      cursor          DisplayXFBCursor        framebuffer notification (IOKit)
-         *      update          DisplayXFBUpdateBuffer  GA plug-in (mach messaging)
          */
         enum Notification
         {
             kNotificationDisplayState       =   1,      //! A display's state has been changed by the user
-            kNotificationCursorState        =   2,      //! The cursor has moved or changed image
-            kNotificationCursorImage        =   3,      //! The cursor has moved or changed image
-            kNotificationDisplayUpdate      =   4       //! The display data has been updated
+            kNotificationCursorState        =   2,      //! The cursor has changed state
+            kNotificationCursorImage        =   3,      //! The cursor image has changed
         };
 
 
