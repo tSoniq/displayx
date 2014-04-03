@@ -20,11 +20,11 @@ Description
 
 DisplayX is a virtual display driver for MacOSX, offering the following capabilities:
 
-    - dynamic display configuration and control from the application level
-    - high performance data capture via Quartz display streaming
-    - supports MacOSX 10.6 or later
-    - integrated application installer/uninstaller
-    - supports multiple display units (via build option)
+- dynamic display configuration and control from the application level
+- high performance data capture via Quartz display streaming
+- supports MacOSX 10.6 or later
+- integrated application installer/uninstaller
+- supports multiple display units (via build option)
 
 The sample application provides a window that shows the content of a virtual display in real-time. To test,
 run the application and click 'Connect' to connect the virtual display and shows its contents. Once connected,
@@ -38,6 +38,17 @@ resolution), the resolution can be reset to a default level via the 'Reset Resol
 The c++ class DisplayXFBInterface provides the application interface to the display driver. Please see the
 doxygen markup for a description of the available methods. Driver configuration and state structures are defined
 in DisplayXFBShared.h.
+
+
+
+
+Driver Installation and Removal
+-------------------------------
+
+The demonstration application includes an example installer and uninstaller. It will prompt to install
+and restart the computer if it contains a newer driver than is currently installed.
+
+To uninstall both driver and application, select "Uninstall..." from the application menu.
 
 
 
