@@ -10,7 +10,7 @@
 //
 //  Note that kext codesigning is performed in the kext post-build script as part of the process
 //  of generating two versions (one suitable for 10.6 or later, the other for 10.9 or later).
-DISPLAYXFB_CODESIGN_KEXT=0ce5fa2ff1f7e47a85df62f2ab16f943a213b85d
+DISPLAYXFB_CODESIGN_KEXT=
 
 
 //  Version information for the kexts.
