@@ -77,6 +77,6 @@ The virtual display count and per-display VRAM can also be configured in Display
 About tSoniq
 ------------
 
-tSoniq is a Barcelona based software consultancy specialising in MacOS and iOS application and driver development.
+tSoniq is a Barcelona based consultancy specialising in wireless multimdia, hardware and semiconductor design, together with MacOS and iOS application and driver development.
 
 For more information on what we offer, please visit http://tsoniq.com.
